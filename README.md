@@ -8,3 +8,5 @@ I build with
 
 I run the docker with:
 > docker run --shm-size=256m -it -p 5901:5901 -e VNC_PASSWD=123456   foxy:vnc
+
+To access the vnc server go to the noVNC client url in your favorite browser. On macOS, you may need to replace the provided ip address (not the port) with "localhost".
