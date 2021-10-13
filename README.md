@@ -12,6 +12,8 @@ I run the docker with:
 Then access it with:
 > http://localhost:5901/?password=123456
 
+On OSX, Use a two-fingered tap to "right click" 
+
 Once you start this, you'll see a _mostly blank looking_ vnc window.  You can either right click to access the menu and open a terminal, OR, if you don't have an right click (Apple hardware I'm looking at you):
 
 You can then start *another* docker container:
