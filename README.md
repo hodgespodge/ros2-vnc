@@ -7,6 +7,23 @@ I build with
 
 
 I run the docker with:
-> docker run --shm-size=256m -it -p 5901:5901 -e VNC_PASSWD=123456   foxy:vnc
+> docker run --shm-size=256m -it -p 5901:5901 -e VNC_PASSWD=123456 --name foxy-vnc  foxy:vnc
 
-To access the vnc server go to the noVNC client url in your favorite browser. On macOS, you may need to replace the provided ip address (not the port) with "localhost".
+Then access it with:
+> http://localhost:5901/?password=123456
+
+On OSX, Use a two-fingered tap to "right click" 
+
+Once you start this, you'll see a _mostly blank looking_ vnc window.  You can either right click to access the menu and open a terminal, OR, if you don't have an right click (Apple hardware I'm looking at you):
+
+You can then start *another* docker container:
+
+> docker exec -it foxy-nvc bash
+source ROS:w
+
+> source /opt/ros/fox/setup.bash
+
+set the display environment variable:
+
+> export DISPLAY=:0
+
