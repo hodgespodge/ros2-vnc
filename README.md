@@ -21,7 +21,7 @@ You can then start *another* docker container:
 > docker exec -it foxy-nvc bash
 source ROS:w
 
-> source /opt/ros/fox/setup.bash
+> source /opt/ros/foxy/setup.bash
 
 set the display environment variable:
 
